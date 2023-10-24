@@ -16,7 +16,7 @@ jobs:
   say-hello:
     runs-on: macos-11
     steps:
-      - uses: mheap/github-action-required-labels@v5
+      - uses: mheap/github-action-required-labels@v1
         with:
           mode: exactly
           count: 0
