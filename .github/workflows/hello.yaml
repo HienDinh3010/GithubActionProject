@@ -6,8 +6,10 @@ on:
       - '!docs/**'
       - '**.java'
     branches:
+      - 'master'
       - 'release/**'
       - '!dev/**'
+  workflow_dispatch: 
 jobs:
   say-hello:
     runs-on: macos-11
