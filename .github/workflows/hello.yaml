@@ -1,7 +1,13 @@
 name: hello
 on:
   push:
-    branches: [master]
+    paths:
+      - '!README.md'
+      - '!docs/**'
+      - '**.java'
+    branches:
+      - 'release/**'
+      - '!dev/**'
 jobs:
   say-hello:
     runs-on: macos-11
